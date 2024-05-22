@@ -11,9 +11,9 @@ function App() {
     <>
     <div className="container-fluid">
       <div className="row">
-      <div className="col-xl-3 col-lg-5 col-md-4 col-sm-12"><Sidebar /></div>
-      <div className="col-xl-6 col-lg-7 col-md-8 col-sm-12"><Header/></div>
-      <div className="col-xl-3 col-lg-12 col-md-12 col-sm-12"><Form></Form></div>
+      <div className="col-xl-3 col-lg-2 col-md-3 col-sm-12"><Sidebar /></div>
+      <div className="col-xl-6 col-lg-7 col-md-9 col-sm-12"><Header/></div>
+      <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12"><Form></Form></div>
       </div>
       
       {/* <Nav /> */}

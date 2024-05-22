@@ -15,7 +15,7 @@ export default function Form(){
   <textarea className="form-control" id="exampleFormControlTextarea1" name='Pregunta' rows="3"></textarea>
   
 </div>
-<input type="submit" value="" />
+<input type="submit" value="enviar" className='px-5 mx-5' />
 </form>
 </div>
 
