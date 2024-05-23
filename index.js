@@ -1,13 +1,13 @@
 import express from "express";
 import mysql from "mysql";
 import cors from "cors";
-import { createProxyMiddleware } from "http-proxy-middleware";
+
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 const port = 3000;
-const PORT = process.env.PORT || 5173;
+
 
 const database_config = {
     host: 'localhost',
@@ -82,7 +82,6 @@ app.delete('/podcast/:id', (req, res) => {
     }
     });
     });
-    app.use("/", createProxyMiddleware({ target: "http://localhost:5173", changeOrigin: true }));
 
 
 
