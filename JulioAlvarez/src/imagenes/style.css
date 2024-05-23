@@ -5,9 +5,7 @@ border-radius: 7px;
 .relativo{position: relative;}
 .margen{margin: 0 0  0 0;}
 .negro{color: black;}
-.resaltar:hover {
-    color: aliceblue;
-  }
+
   .movible{overflow-y: auto;}
 .margen-arriba-nav{margin-top: 80px;}
 .margen-arriba-nav-sidebar{margin-top: 80px;}
