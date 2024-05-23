@@ -1,4 +1,15 @@
 .imagen-podcast{width: 100%;
 border-radius: 7px;
 }
-.estatico-sidebar{position: fixed ;}
+ .estatico-sidebar{position: fixed ;} 
+.relativo{position: relative;}
+.margen{margin: 0 0  0 0;}
+.negro{color: black;}
+.resaltar:hover {
+    color: aliceblue;
+  }
+  .movible{overflow-y: auto;}
+.margen-arriba-nav{margin-top: 80px;}
+.margen-arriba-nav-sidebar{margin-top: 80px;}
+.margen-arriba-nav-form{margin-top: 60px;}
+  

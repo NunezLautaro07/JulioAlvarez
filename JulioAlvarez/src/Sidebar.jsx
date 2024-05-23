@@ -5,12 +5,9 @@ function Sidebar(){
 
     return(
         <>
-        <div className="estatico-sidebar margen" >
+        <div className="estatico-sidebar margen  margen-arriba-nav-sidebar" >
             
-          <a href="/"
-            className="d-flex pb-3 mb-3 pt-3 text-center  text-decoration-none border-bottom">
-            <span className="fs-5 text-center ">Temas</span>
-          </a>
+         
           <ul className="list-unstyled ps-0">
             <li className="mb-1">
               <button
@@ -31,56 +28,26 @@ function Sidebar(){
             </li>
             <li className="mb-1">
               <button
-                className="btn btn-toggle  d-inline-flex align-items-center rounded border-0 collapsed  "
+                className="btn border-0   "
                 >
                 Futuro
               </button>
             </li>
             <li className="mb-1">
               <button
-                className="btn btn-toggle  d-inline-flex align-items-center rounded border-0 collapsed  "
+                className="btn border-0   "
                 >
                 Futuro
               </button>
-            </li>
-            <li className="mb-1">
+            </li> <li className="mb-1">
               <button
-                className="btn btn-toggle  d-inline-flex align-items-center rounded border-0 collapsed  "
+                className="btn border-0   "
                 >
                 Futuro
               </button>
-            </li>
-            <li className="mb-1">
+            </li> <li className="mb-1">
               <button
-                className="btn btn-toggle  d-inline-flex align-items-center rounded border-0 collapsed  "
-                >
-                Futuro
-              </button>
-            </li>
-            <li className="mb-1">
-              <button
-                className="btn btn-toggle  d-inline-flex align-items-center rounded border-0 collapsed  "
-                >
-                Futuro
-              </button>
-            </li>
-            <li className="mb-1">
-              <button
-                className="btn btn-toggle  d-inline-flex align-items-center rounded border-0 collapsed  "
-                >
-                Futuro
-              </button>
-            </li>
-            <li className="mb-1">
-              <button
-                className="btn btn-toggle  d-inline-flex align-items-center rounded border-0 collapsed  "
-                >
-                Futuro
-              </button>
-            </li>
-            <li className="mb-1">
-              <button
-                className="btn btn-toggle  d-inline-flex align-items-center rounded border-0 collapsed  "
+                className="btn border-0   "
                 >
                 Futuro
               </button>
