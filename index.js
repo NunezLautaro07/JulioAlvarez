@@ -1,7 +1,7 @@
 import express from "express";
 import mysql from "mysql";
 import cors from "cors";
-
+import { createProxyMiddleware } from "http-proxy-middleware";
 
 const app = express();
 app.use(cors());
@@ -81,7 +81,7 @@ app.delete('/podcast/:id', (req, res) => {
     }
     });
     });
-
+    app.use("/", createProxyMiddleware({ target: "http://localhost:5173", changeOrigin: true }));
 
 
 
