@@ -6,7 +6,8 @@ import { createProxyMiddleware } from "http-proxy-middleware";
 const app = express();
 app.use(cors());
 app.use(express.json());
-const port = process.env.PORT || 3000;
+const port = 3000;
+const PORT = process.env.PORT || 5173;
 
 const database_config = {
     host: 'localhost',
