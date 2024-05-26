@@ -17,7 +17,7 @@ return(
 <nav className="navbar bg-body-tertiary estatico-sidebar">
 
   <div className="container-fluid ">
-  <a className="navbar-brand fs-4 " href="#">Julio Alvarez</a>
+  <a className="navbar-brand fs-4 " href="#">Fisica Moderna en 1 minuto</a>
  <span className='d-flex '><FontAwesomeIcon icon="fa-solid fa-moon" size="xl" onClick={toggleTheme} /></span> 
     
   </div>

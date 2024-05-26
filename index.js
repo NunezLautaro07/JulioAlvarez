@@ -6,7 +6,7 @@ import cors from "cors";
 const app = express();
 app.use(cors());
 app.use(express.json());
-const port = 3000;
+const port = process.env.PORT ||3000;
 
 
 const database_config = {
@@ -30,7 +30,8 @@ const createTableQuery = `
         id INT AUTO_INCREMENT PRIMARY KEY,
         nombre VARCHAR(255) NOT NULL,
         tema VARCHAR(255) NOT NULL,
-        descripcion VARCHAR(255) NOT NULL
+        descripcion VARCHAR(255) NOT NULL,
+        pdf BLOB
         )
         `;
 

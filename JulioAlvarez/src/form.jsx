@@ -4,18 +4,18 @@ export default function Form(){
 
     return(
         <>
-        <div className="estatico-sidebar margen-arriba-nav-form">
-        <div className="mb-3 pt-3 px-5 ">
-        <form action="https://formspree.io/f/moqgzenz" method="post">
-  <label htmlFor="exampleFormControlInput1" className="form-label">Nombre</label>
-  <input type="text" className="form-control" name='Nombre'  placeholder="" />
+        <div className="estatico-sidebar   margen-arriba-nav-form">
+        <div className="w-100 justify-content-center">
+        <form action="https://formspree.io/f/moqgzenz" method="post" className=''>
+  <label htmlFor="exampleFormControlInput1" className="form-label ">Nombre</label>
+  <input type="text" className="form-control " name='Nombre'  placeholder="" />
 
 <div className="mb-3">
   <label htmlFor="exampleFormControlTextarea1" className="form-label">Pregunta</label>
   <textarea className="form-control" id="exampleFormControlTextarea1" name='Pregunta' rows="3"></textarea>
   
 </div>
-<input type="submit" value="enviar" className='px-5 mx-5' />
+<input type="submit" value="Enviar" className=' btn ' />
 </form>
 </div>
 

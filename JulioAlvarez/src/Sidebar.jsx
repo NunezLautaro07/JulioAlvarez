@@ -2,56 +2,38 @@ import React, { useState, useEffect } from 'react';
 import "./imagenes/style.css";
 
 function Sidebar(){
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3000/podcast")
+      .then((response) => response.json())
+      .then((data) => {
+        setPosts(data);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  }, []);
 
     return(
         <>
-        <div className="estatico-sidebar margen  margen-arriba-nav-sidebar" >
-            
+        <div className="estatico-sidebar   margen-arriba-nav-sidebar" >
+       <p className='text-center fw-bold'>Temas</p>
+       <hr />
          
-          <ul className="list-unstyled ps-0">
-            <li className="mb-1">
-              <button
-                className="btn btn-toggle  dropdown-toggle d-inline-flex align-items-center rounded border-0 collapsed  "
-                data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
-                Futuro
-              </button>
-              <div className="collapse  " id="home-collapse">
-                <ul className="btn-toggle-nav list-unstyled fw-normal   pb-1 small">
-                  <li><a href="#"
-                      className="   d-inline-flex text-decoration-none rounded">Futuro</a></li>
-                  <li><a href="#"
-                      className="   d-inline-flex text-decoration-none rounded">Futuro</a></li>
-                  <li><a href="#"
-                      className="   d-inline-flex text-decoration-none rounded">Futuro</a></li>
-                </ul>
-              </div>
-            </li>
-            <li className="mb-1">
+          <ul className="list-unstyled ">
+            {posts.map((post)=>(
+             
+              <li className="mb-1 " key={post.id}>
               <button
                 className="btn border-0   "
                 >
-                Futuro
+                {post.tema}
               </button>
             </li>
-            <li className="mb-1">
-              <button
-                className="btn border-0   "
-                >
-                Futuro
-              </button>
-            </li> <li className="mb-1">
-              <button
-                className="btn border-0   "
-                >
-                Futuro
-              </button>
-            </li> <li className="mb-1">
-              <button
-                className="btn border-0   "
-                >
-                Futuro
-              </button>
-            </li>
+          
+            ))}
+        
           
            
           </ul>
