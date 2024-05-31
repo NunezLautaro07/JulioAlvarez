@@ -26,7 +26,7 @@ function Sidebar(){
              
               <li className="mb-1 " key={post.id}>
               <button
-                className="btn border-0   "
+                className="btn border-0   text-start"
                 >
                 {post.tema}
               </button>

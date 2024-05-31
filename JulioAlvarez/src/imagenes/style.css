@@ -2,7 +2,9 @@
   width: 100%;
   border-radius: 7px;
 }
-
+a {
+  color: inherit 
+}
 .estatico-sidebar {
   position: relative; /* Por defecto para pantallas pequeñas */
 }
@@ -15,9 +17,7 @@
   color: black;
 }
 
-.movible {
-  overflow-y: auto;
-}
+
 
 .margen-arriba-nav {
   margin-top: 0px;
@@ -65,7 +65,7 @@
   }
 
   .margen-arriba-nav-form {
-    margin-top: 75px;
+    margin-top: 88px;
     margin-right: 4%;
      /* Mantener el margen para pantallas grandes */
   }
@@ -76,3 +76,4 @@
     margin-left: 6%;
   }
 }
+.margen-pdf{margin-right: 5px;}
